@@ -1,3 +1,5 @@
+const pool = require("../config/db.config");
+
 exports.criar = async (req, res) => {
   res.status(201).json("Rota de criar ok hihi");
 };
