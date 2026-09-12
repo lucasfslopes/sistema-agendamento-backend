@@ -1,3 +1,5 @@
+/*
+//MySQL2
 const mysql = require("mysql2/promise");
 
 const pool = mysql.createPool({
@@ -11,3 +13,14 @@ const pool = mysql.createPool({
 });
 
 module.exports = pool;
+*/
+
+//Supabase
+const { createClient } = require("@supabase/supabase-js");
+
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_KEY,
+);
+
+module.exports = supabase;
