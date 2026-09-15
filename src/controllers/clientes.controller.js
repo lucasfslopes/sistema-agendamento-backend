@@ -1,12 +1,10 @@
-//const supabase = require("../config/db.config");
-const models = require("../models/usuarios.models");
+const pool = require("../config/db.config");
 
 exports.criar = async (req, res) => {
+
   const { nome, preco } = req.body;
 
-  return res.status(201).json({ message: "Produto inserido com sucesso!" });
-
-  //res.status(201).json("Rota de criar ok hihi");
+  res.status(201).json("Rota de criar ok hihi");
 };
 
 exports.listar = async (req, res) => {

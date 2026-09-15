@@ -12,9 +12,11 @@ app.use(cors());
 
 //importar rotas
 const usuariosRoutes = require("./src/routes/usuarios.routes");
+const clientesRoutes = require("./src/routes/clientes.routes");
 
 //iniciar rotas importadas
 app.use("/usuarios", usuariosRoutes);
+app.use("/clientes", clientesRoutes);
 
 //module.exports permite que seja chamado a funcao em outros arquivos
 module.exports = app;
